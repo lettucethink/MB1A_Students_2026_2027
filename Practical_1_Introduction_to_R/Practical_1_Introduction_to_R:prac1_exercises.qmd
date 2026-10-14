@@ -1,0 +1,90 @@
+---
+title: "Practical_1_Introduction_to_R/prac1_exercises"
+author: "Tony Shi"
+editor: visual
+---
+# Rounding pi to the nearest 2dp.
+```{r}
+round(3.14159, digits = 2)
+```
+
+# Sequences
+```{r}
+print(seq(1, 10, 2))
+print(seq(by = 2, from = 1, to = 10))
+```
+
+# Repeating values
+```{r}
+print(rep(2, 5))
+print(rep(x = 2, times = 5))
+print(rep(5,7))
+```
+
+# Variable types
+Numeric
+```{r}
+a <- 2026
+print(a)
+```
+Character
+```{r}
+b <- "Batesian mimicry"
+print(b)
+```
+Logical 
+```{r}
+c <- TRUE
+print(c)
+```
+Identifying types of variables
+```{r}
+print(class(a))
+print(class(b))
+print(class(c))
+```
+#Using variables of different types
+```{r}
+cell_ID_1 <- "CX1"
+cell_ID_2 <- "CX2"
+
+treated_1 <- TRUE
+treated_2 <- FALSE
+
+num_cells_before_1 <- 5415
+num_cells_before_2 <- 8123
+
+num_cells_after_1 <- 1432
+num_cells_after_2 <- 7543
+```
+
+#Behaviour of R
+```{r}
+print(TRUE + TRUE)
+print(TRUE + FALSE)
+print(5 + TRUE)
+#TRUE = 1 and FALSE = 0
+```
+```{r}
+x <- NA
+print(x == NA)
+print(is.na(x))
+#NA is a missing or unknown value
+```
+```{r}
+x <- 0 / 0
+print(x)
+print(is.na(x))
+print(is.nan(x))
+#NaN is Not a Number
+#is.na() checks whether a value is missing
+```
+
+```{r}
+print(round(2.5))
+print(round(3.5))
+#R rounds to even
+```
+
+
+

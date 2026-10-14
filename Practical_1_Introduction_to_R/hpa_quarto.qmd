@@ -1,0 +1,30 @@
+---
+title: "hpa_quarto"
+author: "Tony Shi"
+---
+
+We are calculating the total number of genes with regionally elevated expression in the forebrain in humans, pigs and mice.
+
+# Human
+
+```{r}
+elevated_human_genes <- sum(57,110,180,83)
+print(elevated_human_genes)
+```
+
+# Pig
+
+```{r}
+elevated_pig_genes <- sum(109,157,31,45)
+print(elevated_pig_genes)
+```
+
+
+# Mouse
+
+```{r}
+elevated_mouse_genes <- sum(55,185,60,98)
+print(elevated_mouse_genes)
+```
+
+*Homo sapiens* have the highest number of genes with regionally elevated expression (430).
